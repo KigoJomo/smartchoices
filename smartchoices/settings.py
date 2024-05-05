@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qp&(60r&^w**@a$ggx$$r%6$npl-(g)xkwy!jisrh12%@$_%uq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -67,18 +68,13 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'smartchoices.wsgi.application'
+WSGI_APPLICATION = 'smartchoices.wsgi.app'
 
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = {}
 
 
 # Password validation
