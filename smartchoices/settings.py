@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'smartchoices.wsgi.app'
+WSGI_APPLICATION = 'smartchoices.wsgi.application'
 
 
 # Database
