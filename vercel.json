@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "smartchoices/wsgi.py"
+      "dest": "api/wsgi.py"
     }
   ]
 }
